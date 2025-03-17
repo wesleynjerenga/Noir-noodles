@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir noodles</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Noir noodles</h1>
+   
+    <div id="ramen-menu"></div>
+    
+    <div id="ramen-detail">
+        <h2 id="ramen-name">Ramen Name</h2>
+        <p id="ramen-restaurant">Restaurant: </p>
+        <p id="ramen-rating">Rating: </p>
+        <p id="ramen-comment">Comment: </p>
+    </div>
+    
+    <div id="new-ramen-form">
+        <h3>Add a New Ramen</h3>
+        <form id="ramen-form">
+            <label for="name">Ramen Name: </label><br><br>
+            <select id="name" required><br><br>
+                <option value=""></option>
+                <option value="shoyu">Shoyu</option>
+                <option value="shio">Shio</option>
+                <option value="tonkotsu">Tonkotsu</option>
+                <option value="miso">Miso</option>
+</select>
+            <label for="restaurant">Restaurant: </label><br><br>
+            <input type="text" id="restaurant" required><br><br>
+            <label for="image">Image URL: </label><br><br>
+            <select id="image" required ><br><br>
+                <option value=""></option>
+                <option value="images/shoyu.jpg">Shoyu</option>
+                <option value="images/Shio.jpg">Shio</option>
+                <option value="images/Tonkotsu.jpg">Tonkotsu</option>
+                <option value="images/Miso.jpg">Miso</option>
+                <option value="images/Curry Ramen.jpg">Curry ramen</option>
+                <option value="images/Tsukumen.jpg">Tsukumen</option>
+            </select>
+            <label for="rating">Rating: </label><br><br>
+            <input type="number" id="rating" min="1" max="5" required><br><br>
+            <label for="comment">Comment: </label><br><br>
+            <input type="text" id="comment">
+            <button type="submit">Add Ramen</button>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
